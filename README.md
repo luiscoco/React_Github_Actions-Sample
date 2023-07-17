@@ -53,5 +53,19 @@ jobs:
 
 
 ## Github actions secuential jobs (test and deploy)
+For example if we require to finish the test before starting the deploy jon then use the "needs" tag. See the example:
+
+```yml
+deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+```
+
+This is the final code:
+
+```yml
 
 
+```
