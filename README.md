@@ -1,6 +1,6 @@
 # React_Github_Actions-Sample
 
-## Parallel jobs (test and deploy)
+## Github actions parallel jobs (test and deploy)
 In the following case we set two jobs (test and deploy):
 
 The first job (test) runs on a Linux virtual machine (agent) where is installed the "ubuntu-latest" operating system
@@ -50,4 +50,8 @@ jobs:
       - name: Deploy
         run: echo "Deploying ..."
 ```
+
+
+## Github actions secuential jobs (test and deploy)
+
 
